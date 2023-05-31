@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Example</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Kiba-CSS is a starter CSS framework that combines the power of BEM methodology with utility classes, providing a solid foundation for web projects. Kickstart your project with a well-organized and modular code structure, and apply quick and easy styling with our wide range of utility classes.">
+	<meta name="keywords"
+		content="Form, Grid, Container, Utils, Navbar">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/kiba-css@0.9.2/dest/kiba.min.css">
+</head>
+
+<body>
+	<nav class="navbar bg-blue">
+		<div class="navbar__brand text-white">Form</div>
+		<ul class="navbar__menu">
+			<li class="navbar__item"><a href="#" class="navbar__link text-white">Home</a></li>
+			<li class="navbar__item"><a href="#" class="navbar__link text-white">About</a></li>
+			<li class="navbar__item"><a href="#" class="navbar__link text-white">Services</a></li>
+			<li class="navbar__item"><a href="#" class="navbar__link text-white">Contact</a></li>
+		</ul>
+	</nav>
+	  <div class="container mt-16">
+		<h1>Form</h1>
+		<form class=".form">
+			<div class="grid grid--cols-8">
+				<div class="grid__col grid__col--12 grid__col--2-md">
+					<div class="form__item">
+						<label class="form__radio-label">
+							<input type="radio" name="radio" value="value">
+							<span class="form__radio-custom"></span>
+							Option 1
+						  </label>
+					</div>
+				</div>
+				<div class="grid__col grid__col--12 grid__col--2-md">
+					<div class="form__item">
+						<label class="form__radio-label">
+							<input type="radio" name="radio" value="value">
+							<span class="form__radio-custom"></span>
+							Option 2
+						  </label>
+					</div>
+				</div>
+			</div>
+			<div class="form__item">
+			  <label class="form__label" for="name">Name:</label>
+			  <input class="form__input" type="text" id="name" name="name" required>
+			</div>
+			<div class="form__item">
+			  <label class="form__label" for="email">E-Mail:</label>
+			  <input class="form__input" type="email" id="email" name="email" required>
+			</div>
+			<div class="form__item">
+			  <label class="form__label" for="phone">Telefon:</label>
+			  <input class="form__input" type="tel" id="phone" name="phone" required>
+			</div>
+			<div class="form__item">
+			  <label class="form__label" for="message">Nachricht:</label>
+			  <textarea class="form__input" id="message" name="message" required></textarea>
+			</div>
+			<div class="form__item">
+				<label class="form__checkbox-label">
+					<input type="checkbox" name="checkbox" value="value">
+					<span class="form__checkbox-custom"></span>
+					I accept lorem ipsum
+				  </label>
+			<div class="form__item">
+			  <label class="form__label" for="attachment">Anhang:</label>
+			  <input class="form__input" type="file" id="attachment" name="attachment">
+			</div>
+			<div class="grid grid--cols-8">
+				<div class="grid__col grid__col--12 grid__col--2-md">
+					<button class="button bg-primary text-white" type="submit">Absenden</button>
+					</div>
+				</div>
+			</div>
+		  </form> 
+	  </div>
+	 
+</body>
+
+</html>
